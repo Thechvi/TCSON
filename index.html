@@ -1,280 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style/style.css">
-	<link rel="icon" href="page/logo_tcon__title.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="icon" href="page/logo_tcon__title.ico">
 
-	<title>ГУ"ТЦСОН Логойского района"</title>
+    <title>ГУ"ТЦСОН Логойского района"</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<div class="content">
-			<header class="header">
-				<div class="container">
-					<div class="header__row">
-						<div class="header__logo">
-							<img src="page/logo_header2.png" alt="">
-						</div>
-						<div class="header__title">Государственное учреждение <br>
-							«Территориальный центр социального обслуживания населения <br>
-							Логойского района»</div>
-						<div class="header__contact">
-							<li class="map"> <a class="contact__link"
-									href="https://yandex.by/maps/org/gu_territorialny_tsentr_sotsialnogo_obsluzhivaniya_naseleniya_logoyskogo_rayona/1022443812/?ll=27.852373%2C54.211798&z=17"
-									target="_blank"> <span>&#9873;</span> &nbsp; 223141, г. Логойск, ул. Победы, 80 </a>
-							</li>
-							<li class="phone"><a class="contact__link" href=""> <span>&#9742;</span> +375 (1774)78
-									-4-18</a></li>
-							<li class="email"><a class="contact__link" href=""><span>&#128386;</span>
-									gu.ttssonlogoisk@yandex.by</a></li>
-							<li class="hotline"><a class="contact__link" href=""><span></span> ГОРЯЧАЯ ЛИНИЯ:</a></li>
-							<li class="mailcitiz"><a class="contact__link" href=""><span></span> ЭЛЕКТРОННЫЕ
-									ОБРАЩЕНИЯ</a></li>
+<div class="wrapper">
+    <div class="content">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__logo">
+                        <img src="page/logo_header2.png" alt="">
+                    </div>
+                    <h1 class="header__title">Государственное учреждение <br>
+                        «Территориальный центр социального обслуживания населения <br>
+                        Логойского района»</h1>
+                    <ul class="header__contact-list">
+                        <li class="header__contact-item header__contact-item--map">
+                            <a class="contact__link"
+                               href="https://yandex.by/maps/org/gu_territorialny_tsentr_sotsialnogo_obsluzhivaniya_naseleniya_logoyskogo_rayona/1022443812/?ll=27.852373%2C54.211798&z=17"
+                               target="_blank">
+                                <!--TODO: it's better to replace by svg icon-->
+                                <span class="header__contact-icon">&#9873;</span>
+                                <span>223141, г. Логойск, ул. Победы, 80</span>
+                            </a>
+                        </li>
+                        <li class="header__contact-item header__contact-item--phone">
+							<a class="contact__link" href="">
+                                <!--TODO: it's better to replace by svg icon-->
+                                <span class="header__contact-icon">&#9742;</span>
+                                <span>+375 (1774)78 -4-18</span>
+                            </a>
+                        </li>
+                        <li class="header__contact-item email">
+							<a class="contact__link" href="">
+                                <!--TODO: it's better to replace by svg icon-->
+                                <span class="header__contact-icon">&#128386;</span>
+                                <span>gu.ttssonlogoisk@yandex.by</span>
+							</a>
+						</li>
+                        <li class="header__contact-item hotline">
+							<a class="contact__link" href="">
+                                <!--TODO: it's better to replace by svg icon-->
+                                <span class="header__contact-icon"></span>
+                                <span>ГОРЯЧАЯ ЛИНИЯ:</span>
+							</a></li>
+                        <li class="header__contact-item mailcitiz">
+							<a class="contact__link" href="">
+                                <!--TODO: it's better to replace by svg icon-->
+                                <span class="header__contact-icon"></span>
+                                <span>ЭЛЕКТРОННЫЕ ОБРАЩЕНИЯ</span>
+							</a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav class="menu">
+            <div class="container">
+                <div class="menu__row">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__list-item"><a href="">Главная</a></li>
+                        <li class="main-nav__list-item"><a href="">О центре</a></li>
+                        <li class="main-nav__list-item"><a href="">Новости</a></li>
+                        <li class="main-nav__list-item"><a href="" class="down">Услуги <span
+                                class="arrow-list">&gt;&gt;</span> </a>
+                            <ul class="submenu">
+                                <li><a href="">Социальная сфера</a></li>
+                                <li><a href="">Социальная сфера</a></li>
+                                <li><a href="">Социальная сфера</a></li>
+                                <li><a href="">Социальная сфера</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__list-item"><a href="" class="down">Проекты<span
+                                class="arrow-list">&gt;&gt;</span></a>
+                            <ul class="submenu">
+                                <li><a href="">Наши проекты</a></li>
+                                <li><a href="">Наши проекты</a></li>
+                                <li><a href="">Наши проекты</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__list-item"><a href="">Активное долголетие</a></li>
+                        <li class="main-nav__list-item"><a href="">Профилактика домашнего насилия</a></li>
+                        <li class="main-nav__list-item"><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="container">
+                <div class="main__row">
+                    <div class="main__content">
+                        <ul class="main__list">
+                            <p>Основные задачи Центра:</p>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> участие в
+                                отслеживании социально-демографической ситуации и разработке предложений по
+                                совершенствованию социального обслуживания населения на территории соответствующей
+                                административно-территориальной единицы;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span>
+                                дифференцированный (по категориям) учет граждан, находящихся в трудной жизненной
+                                ситуации, определение необходимых им форм социального обслуживания, видов социальных
+                                услуг;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> обеспечение
+                                выполнения государственных минимальных социальных стандартов в области социального
+                                обслуживания;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> удовлетворение
+                                потребностей граждан, находящихся в трудной жизненной ситуации, в социальных
+                                услугах, включенных в перечень бесплатных и общедоступных социальных услуг
+                                государственных учреждений социального обслуживания с нормами и нормативами
+                                обеспеченности граждан этими услугами, утвержденный постановлением Совета Министров
+                                Республики Беларусь от 27 декабря 2012 г. № 1218;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> осуществление
+                                функций по опеке и попечительству в отношении совершеннолетних лиц, которые признаны
+                                недееспособными или ограниченно дееспособными, в соответствии с Положением об
+                                органах опеки и попечительства, утвержденным постановлением Совета Министров
+                                Республики Беларусь от 28 октября 1999 г. № 1676;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> предоставление
+                                гражданам, находящимся в трудной жизненной ситуации, иных социальных услуг вводимых
+                                по решению Учредителя;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> участие в
+                                распределении безвозмездной (спонсорской) помощи в натуральной форме, иностранной
+                                безвозмездной помощи, а также помощи (пожертвований), полученной от физических лиц,
+                                поступающей в центр;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> проведение
+                                информационно-просветительной работы по актуальным вопросам социального
+                                обслуживания, опеки и попечительства в отношении совершеннолетних лиц, которые
+                                признаны недееспособными или ограниченно дееспособными, на территории
+                                соответствующей административно-территориальной единицы;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> выявление
+                                неблагоприятной для детей обстановки в семье при оказании социальных услуг;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> участие в
+                                мероприятиях по устранению причин и условий, повлекших создание неблагоприятной для
+                                детей обстановки в семье;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> участие в
+                                профилактических мероприятиях по противодействию домашнему насилию;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> привлечение к
+                                сотрудничеству волонтеров для оказания социальных услуг гражданам, находящимся в
+                                трудной жизненной ситуации;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> сотрудничество
+                                с организациями различных форм собственности и индивидуальными предпринимателями по
+                                вопросам социального обслуживания населения в пределах своей компетенции;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> подготовка
+                                методических материалов на основе практической деятельности центра;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> изучение,
+                                обобщение и внедрение в практику лучшего отечественного и зарубежного опыта
+                                социального обслуживания;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> составление и
+                                анализ ведомственной и другой отчетности по направлениям деятельности центра;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> подготовка
+                                аналитических материалов по вопросам социального обслуживания;
+                            </li>
+                            <li class="main__list-item"><span class="main__list-marker">&bull;</span> обеспечение
+                                повышения квалификации работников центра.
+                            </li>
 
-						</div>
-					</div>
-				</div>
-			</header>
-			<nav class="menu">
-				<div class="container">
-					<div class="menu__row">
-						<ul class="topmenu">
-							<li><a href="">Главная</a></li>
-							<li><a href="">О центре</a></li>
-							<li><a href="">Новости</a></li>
-							<li><a href="" class="down">Услуги <span class="arrow-list">&gt;&gt;</span> </a>
-								<ul class="submenu">
-									<li><a href="">Социальная сфера</a></li>
-									<li><a href="">Социальная сфера</a></li>
-									<li><a href="">Социальная сфера</a></li>
-									<li><a href="">Социальная сфера</a></li>
-								</ul>
-							</li>
-							<li><a href="" class="down">Проекты<span class="arrow-list">&gt;&gt;</span></a>
-								<ul class="submenu">
-									<li><a href="">Наши проекты</a></li>
-									<li><a href="">Наши проекты</a></li>
-									<li><a href="">Наши проекты</a></li>
-								</ul>
-							</li>
-							<li><a href="">Активное долголетие</a></li>
-							<li><a href="">Профилактика домашнего насилия</a></li>
-							<li><a href="">Контакты</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-			<main class="main">
-				<div class="container">
-					<div class="main__row">
-						<div class="main__content">
-							<ul class="main__list">
-								<p>Основные задачи Центра:</p>
-								<li class="main__list-item"> <span class="main__list-marker">&bull;</span> участие в
-									отслеживании социально-демографической ситуации и разработке предложений по
-									совершенствованию социального обслуживания населения на территории соответствующей
-									административно-территориальной единицы;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span>
-									дифференцированный (по категориям) учет граждан, находящихся в трудной жизненной
-									ситуации, определение необходимых им форм социального обслуживания, видов социальных
-									услуг;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> обеспечение
-									выполнения государственных минимальных социальных стандартов в области социального
-									обслуживания;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> удовлетворение
-									потребностей граждан, находящихся в трудной жизненной ситуации, в социальных
-									услугах, включенных в перечень бесплатных и общедоступных социальных услуг
-									государственных учреждений социального обслуживания с нормами и нормативами
-									обеспеченности граждан этими услугами, утвержденный постановлением Совета Министров
-									Республики Беларусь от 27 декабря 2012 г. № 1218;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> осуществление
-									функций по опеке и попечительству в отношении совершеннолетних лиц, которые признаны
-									недееспособными или ограниченно дееспособными, в соответствии с Положением об
-									органах опеки и попечительства, утвержденным постановлением Совета Министров
-									Республики Беларусь от 28 октября 1999 г. № 1676;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> предоставление
-									гражданам, находящимся в трудной жизненной ситуации, иных социальных услуг вводимых
-									по решению Учредителя;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> участие в
-									распределении безвозмездной (спонсорской) помощи в натуральной форме, иностранной
-									безвозмездной помощи, а также помощи (пожертвований), полученной от физических лиц,
-									поступающей в центр;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> проведение
-									информационно-просветительной работы по актуальным вопросам социального
-									обслуживания, опеки и попечительства в отношении совершеннолетних лиц, которые
-									признаны недееспособными или ограниченно дееспособными, на территории
-									соответствующей административно-территориальной единицы;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> выявление
-									неблагоприятной для детей обстановки в семье при оказании социальных услуг;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> участие в
-									мероприятиях по устранению причин и условий, повлекших создание неблагоприятной для
-									детей обстановки в семье;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> участие в
-									профилактических мероприятиях по противодействию домашнему насилию;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> привлечение к
-									сотрудничеству волонтеров для оказания социальных услуг гражданам, находящимся в
-									трудной жизненной ситуации;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> сотрудничество
-									с организациями различных форм собственности и индивидуальными предпринимателями по
-									вопросам социального обслуживания населения в пределах своей компетенции;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> подготовка
-									методических материалов на основе практической деятельности центра;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> изучение,
-									обобщение и внедрение в практику лучшего отечественного и зарубежного опыта
-									социального обслуживания;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> составление и
-									анализ ведомственной и другой отчетности по направлениям деятельности центра;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> подготовка
-									аналитических материалов по вопросам социального обслуживания;</li>
-								<li class="main__list-item"><span class="main__list-marker">&bull;</span> обеспечение
-									повышения квалификации работников центра.</li>
+
+                        </ul>
 
 
+                    </div>
+                    <div class="main__actual">
+                        <div class="main__actual-head">
+                            <img src="/page/Hotline.jpg" alt="Горячая линия">
+                            <ul class="main__actual-head">
+                                <li><span class="actual__list-marker">&bull;</span> По оказанию помощи в доставке
+                                    продуктов питания и медицинских препаратов одиноким пожилым гражданам и
+                                    инвалидам
+                                    </br> 8(01774) 78338
+                                </li>
 
+                                <li><span class="actual__list-marker">&bull;</span>Телефон "горячей линии" по
+                                    вопросам
+                                    оказания социальных услуг
+                                    </br> 8(01774)78317
+                                <li>Рабочие дни: с 8.00 до 17 00</li>
+                                <li>обед с 13.00 до 14.00</li>
+                            </ul>
+                            <a href="https://www.minpriroda.gov.by/ru/gne-ru/" target="_blank"><img
+                                    src="page/years_of peace.png" alt=""></a>
 
-							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__links">
+                    <div class="link__row">
+                        <div class="link__text">
+                            <a href="https://president.gov.by/ru" target="_blank">Официальный интернет-портал
+                                Президента Республики Беларусь</a>
 
+                        </div>
+                        <div class="link__page">
+                            <a href="https://president.gov.by/ru" target="_blank"><img src="page/Gerb1-1.jpg"
+                                                                                       alt=""></a>
 
-						</div>
-						<div class="main__actual">
-							<div class="main__actual-head">
-								<img src="/page/Hotline.jpg" alt="Горячая линия">
-								<ul class="main__actual-head">
-									<li> <span class="actual__list-marker">&bull;</span> По оказанию помощи в доставке
-										продуктов питания и медицинских препаратов одиноким пожилым гражданам и
-										инвалидам
-										</br> 8(01774) 78338 </li>
+                        </div>
+                    </div>
+                    <div class="link__row">
+                        <div class="link__text">
+                            <a href="http://www.government.by/ru/" target="_blank">Совет Министров Республики
+                                Беларусь</a>
 
-									<li> <span class="actual__list-marker">&bull;</span>Телефон "горячей линии" по
-										вопросам
-										оказания социальных услуг
-										</br> 8(01774)78317
-									<li>Рабочие дни: с 8.00 до 17 00</li>
-									<li>обед с 13.00 до 14.00</li>
-								</ul>
-								<a href="https://www.minpriroda.gov.by/ru/gne-ru/" target="_blank"><img
-										src="page/years_of peace.png" alt=""></a>
+                        </div>
+                        <div class="link__page">
+                            <a href="http://www.government.by/ru/" target="_blank"><img src="page/sovmin.jpg"
+                                                                                        alt=""></a>
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</main>
-		</div>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__row">
-					<div class="footer__links">
-						<div class="link__row">
-							<div class="link__text">
-								<a href="https://president.gov.by/ru" target="_blank">Официальный интернет-портал
-									Президента Республики Беларусь</a>
+                        </div>
+                    </div>
+                    <div class="link__row">
+                        <div class="link__text">
+                            <a href="https://www.pravo.by/" target="_blank">Национальный правовой Интернет-портал
+                                Республики Беларусь</a>
 
-							</div>
-							<div class="link__page">
-								<a href="https://president.gov.by/ru" target="_blank"><img src="page/Gerb1-1.jpg"
-										alt=""></a>
+                        </div>
+                        <div class="link__page">
+                            <a href="https://www.pravo.by/" target="_blank"><img src="page/pravo.by.jpg" alt=""></a>
 
-							</div>
-						</div>
-						<div class="link__row">
-							<div class="link__text">
-								<a href="http://www.government.by/ru/" target="_blank">Совет Министров Республики
-									Беларусь</a>
+                        </div>
+                    </div>
+                    <div class="link__row">
+                        <div class="link__text">
+                            <a href="https://ktzszmoik.by/" target="_blank">Комитет по труду, занятости и социальной
+                                защите Минского облисполкома</a>
 
-							</div>
-							<div class="link__page">
-								<a href="http://www.government.by/ru/" target="_blank"><img src="page/sovmin.jpg"
-										alt=""></a>
+                        </div>
+                        <div class="link__page">
+                            <a href="https://ktzszmoik.by/" target="_blank"><img src="page/Ktzczmoik.png"
+                                                                                 alt=""></a>
 
-							</div>
-						</div>
-						<div class="link__row">
-							<div class="link__text">
-								<a href="https://www.pravo.by/" target="_blank">Национальный правовой Интернет-портал
-									Республики Беларусь</a>
+                        </div>
+                    </div>
+                    <div class="link__row">
+                        <div class="link__text">
+                            <a href="https://minsk-region.gov.by/" target="_blank">Минский обласной исполнительный
+                                комитет</a>
 
-							</div>
-							<div class="link__page">
-								<a href="https://www.pravo.by/" target="_blank"><img src="page/pravo.by.jpg" alt=""></a>
+                        </div>
+                        <div class="link__page">
+                            <a href="https://minsk-region.gov.by/" target="_blank"><img src="page/Minoblkom.png"
+                                                                                        alt=""></a>
 
-							</div>
-						</div>
-						<div class="link__row">
-							<div class="link__text">
-								<a href="https://ktzszmoik.by/" target="_blank">Комитет по труду, занятости и социальной
-									защите Минского облисполкома</a>
+                        </div>
+                    </div>
+                    <div class="link__row">
+                        <div class="link__text">
+                            <a href="http://www.logoysk.gov.by/" target="_blank">Логойский районный исполнительный
+                                комитет</a>
 
-							</div>
-							<div class="link__page">
-								<a href="https://ktzszmoik.by/" target="_blank"><img src="page/Ktzczmoik.png"
-										alt=""></a>
+                        </div>
+                        <div class="link__page">
+                            <a href="http://www.logoysk.gov.by/" target="_blank"><img src="page/Logoyskrik.png"
+                                                                                      alt=""></a>
 
-							</div>
-						</div>
-						<div class="link__row">
-							<div class="link__text">
-								<a href="https://minsk-region.gov.by/" target="_blank">Минский обласной исполнительный
-									комитет</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav__row">
+                    <div class="footer-nav__row-logo">
+                        <div class="logo__img"><img src="page/logo_header2.png" alt=""></div>
+                        <div class="logo__text">Государственное учреждение
+                            «Территориальный центр социального обслуживания населения
+                            Логойского района»
+                        </div>
 
-							</div>
-							<div class="link__page">
-								<a href="https://minsk-region.gov.by/" target="_blank"><img src="page/Minoblkom.png"
-										alt=""></a>
+                    </div>
+                    <div class="footer-nav__row-list">
+                        Режим работы
 
-							</div>
-						</div>
-						<div class="link__row">
-							<div class="link__text">
-								<a href="http://www.logoysk.gov.by/" target="_blank">Логойский районный исполнительный
-									комитет</a>
+                        <ul class="list">
 
-							</div>
-							<div class="link__page">
-								<a href="http://www.logoysk.gov.by/" target="_blank"><img src="page/Logoyskrik.png"
-										alt=""></a>
+                            <li>&#10004; Понедельник</li>
+                            <li>&#10004; Вторник</li>
+                            <li>&#10004; Среда</li>
+                            <li>&#10004; Четверг</li>
+                            <li>&#10004; Пятница</li>
+                            <li>Обед 13:00 до 14:00</li>
+                        </ul>
 
-							</div>
-						</div>
-					</div>
-					<div class="footer__nav">
-						<div class="footer-nav__row">
-							<div class="footer-nav__row-logo">
-								<div class="logo__img"><img src="page/logo_header2.png" alt=""></div>
-								<div class="logo__text">Государственное учреждение
-									«Территориальный центр социального обслуживания населения
-									Логойского района»</div>
+                    </div>
+                </div>
+                <!--					<div class="footer__nav">-->
+                <!--						-->
+                <!--					</div>-->
+                <div class="footer-nav__row-text">
+                    ТЦСОН by Thechvi__2023
+                </div>
 
-							</div>
-							<div class="footer-nav__row-list">
-								Режим работы
-
-								<ul class="list">
-
-									<li>&#10004; Понедельник</li>
-									<li>&#10004; Вторник</li>
-									<li>&#10004; Среда</li>
-									<li>&#10004; Четверг</li>
-									<li>&#10004; Пятница</li>
-									<li>Обед 13:00 до 14:00</li>
-								</ul>
-
-							</div>
-						</div>
-					</div>
-					<div class="footer-nav__row-text">
-						ТЦСОН by Thechvi__2023
-					</div>
-
-				</div>
-		</footer>
-	</div>
-	<script src="app.js"></script>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--TODO: need to fix a path to js file, it's not in root but in '/js' folder-->
+<script src="app.js"></script>
 </body>
 
 </html>
