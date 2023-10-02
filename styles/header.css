@@ -1,61 +1,101 @@
 .header {
-    display: flex;
-    align-items: center;
-    min-height: 220px;
-    width: 100%;
-    background-color: #023a13;
-    background-image: url("/page/Logoysk.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+	display: flex;
+	align-items: center;
+	/* min-height: 220px;*/
+	padding: 20px;
+	width: 100%;
+	background-color: #023a13;
+	background-image: url("/page/Logoysk.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .header__content {
-    height: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	height: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header__title {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 2.5em;
-    color: #f4f8f8;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
-    letter-spacing: 0.3px;
-    -webkit-text-stroke: 1px black;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: clamp(12px, 3vw, 40px);
+	color: #f4f8f8;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+	letter-spacing: 0.3px;
+	-webkit-text-stroke: 1px black;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .header__contact-list {
-    padding: 15px 5px;
-    border-radius: 10px;
-    background-color: rgb(243, 236, 236, 0.7);
-    color: #0e0d0d;
-    font-weight: bold;
+	padding: 15px 5px;
+	border-radius: 10px;
+	background-color: rgb(243, 236, 236, 0.7);
+	color: #0e0d0d;
+	font-weight: bold;
 }
 
 .header__contact-item {
-    font-size: 0.857em;
-    margin-bottom: 15px;
+	font-size: 0.857em;
+	margin-bottom: 15px;
 }
 
 .header__contact-item:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .header__contact-icon {
-    display: inline-block;
-    width: 15px;
+	display: inline-block;
+	width: 15px;
 }
 
 .header__contact-item--phone .header__contact-icon {
-    font-size: 1.1em;
-    color: #5552d6;
+	font-size: 1.1em;
+	color: #5552d6;
 }
 
 .header__contact-item--map .header__contact-icon {
-    font-size: 1.5em;
-    color: crimson;
+	font-size: 1.5em;
+	color: crimson;
 }
+@media (max-width:767px) {
+	.header {
+	display: flex;
+	align-items: center;
+	/* min-height: 220px;*/
+	padding: 20px;
+	width: 100%;
+	background-color: #023a13;
+	background-image: url("/page/Logoysk.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.header__content {
+	height: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__title {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: clamp(18px, 3vw, 40px);
+	color: #f4f8f8;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+	letter-spacing: 0.3px;
+	-webkit-text-stroke: 1px black;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header__contact-list, .header__logo {
+	display: none;
+	
+}
+
+}
+
